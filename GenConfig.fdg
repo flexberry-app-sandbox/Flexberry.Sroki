@@ -25,12 +25,12 @@
       }
     },
     "Backend": {
-      "AspNet": false,
+      "AspNet": true,
       "AspNetCore": true,
       "Java": true
     },
     "Docker": {
-      "Dockerfile": true,
+      "Dockerfile": false,
       "DockerfileAutobuild": false,
       "DockerBuildShellScript": false,
       "DockerSwarm": false
