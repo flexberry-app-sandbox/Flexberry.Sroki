@@ -13,16 +13,16 @@ CREATE TABLE Проект (
 
 CREATE TABLE Участник (
  primaryKey UUID NOT NULL,
- Роль VARCHAR(12) NULL,
  ФИО VARCHAR(255) NULL,
+ Роль VARCHAR(12) NULL,
  PRIMARY KEY (primaryKey));
 
 
 CREATE TABLE Календарь (
  primaryKey UUID NOT NULL,
  Трудозатраты INT NULL,
- Проект UUID NOT NULL,
  Участник UUID NOT NULL,
+ Проект UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -130,11 +130,11 @@ CREATE TABLE ApplicationLog (
 
 
 
- ALTER TABLE Календарь ADD CONSTRAINT FK4cff81a01c8ff9b64d85dbe9844fed30dd332dde FOREIGN KEY (Проект) REFERENCES Проект; 
-CREATE INDEX Index4cff81a01c8ff9b64d85dbe9844fed30dd332dde on Календарь (Проект); 
-
  ALTER TABLE Календарь ADD CONSTRAINT FKad0baf9f0bcf74a2be0d5f713790d4efe2ec05fa FOREIGN KEY (Участник) REFERENCES Участник; 
 CREATE INDEX Indexad0baf9f0bcf74a2be0d5f713790d4efe2ec05fa on Календарь (Участник); 
+
+ ALTER TABLE Календарь ADD CONSTRAINT FK4cff81a01c8ff9b64d85dbe9844fed30dd332dde FOREIGN KEY (Проект) REFERENCES Проект; 
+CREATE INDEX Index4cff81a01c8ff9b64d85dbe9844fed30dd332dde on Календарь (Проект); 
 
  ALTER TABLE STORMWEBSEARCH ADD CONSTRAINT FKc4378e39870eb056aec84088683297a01d2a6200 FOREIGN KEY (FilterSetting_m0) REFERENCES STORMFILTERSETTING; 
 

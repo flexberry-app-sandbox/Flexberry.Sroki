@@ -21,7 +21,15 @@
           "caption": "Участник",
           "title": "",
           "children": null
-        },
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "календарь",
+      "caption": "Календарь",
+      "title": "Календарь",
+      "children": [
         {
           "link": "i-i-s-sroki-календарь-l",
           "menuName": null,

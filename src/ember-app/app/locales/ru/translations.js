@@ -99,6 +99,14 @@ $.extend(true, translations, {
             caption: 'Календарь',
             title: ''
           }
+        },
+        календарь: {
+          caption: 'Календарь',
+          title: 'Календарь',
+          'i-i-s-sroki-календарь-l': {
+            caption: 'Календарь',
+            title: ''
+          }
         }
       }
     },

@@ -28,19 +28,25 @@ export default Controller.extend({
             link: 'i-i-s-sroki-проект-l',
             caption: i18n.t('forms.application.sitemap.sroki.i-i-s-sroki-проект-l.caption'),
             title: i18n.t('forms.application.sitemap.sroki.i-i-s-sroki-проект-l.title'),
-            icon: 'briefcase',
+            icon: 'book',
             children: null
           }, {
             link: 'i-i-s-sroki-участник-l',
             caption: i18n.t('forms.application.sitemap.sroki.i-i-s-sroki-участник-l.caption'),
             title: i18n.t('forms.application.sitemap.sroki.i-i-s-sroki-участник-l.title'),
-            icon: 'suitcase',
+            icon: 'chart line',
             children: null
-          }, {
+          }]
+        }, {
+          link: null,
+          icon: 'list',
+          caption: i18n.t('forms.application.sitemap.календарь.caption'),
+          title: i18n.t('forms.application.sitemap.календарь.title'),
+          children: [{
             link: 'i-i-s-sroki-календарь-l',
-            caption: i18n.t('forms.application.sitemap.sroki.i-i-s-sroki-календарь-l.caption'),
-            title: i18n.t('forms.application.sitemap.sroki.i-i-s-sroki-календарь-l.title'),
-            icon: 'chart bar',
+            caption: i18n.t('forms.application.sitemap.календарь.i-i-s-sroki-календарь-l.caption'),
+            title: i18n.t('forms.application.sitemap.календарь.i-i-s-sroki-календарь-l.title'),
+            icon: 'tags',
             children: null
           }]
         }
