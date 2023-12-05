@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-sroki-участник-e",
+  "editForm": "i-i-s-sroki-участник-e",
+  "external": false,
+  "caption": "Участник",
+  "name": "IISSrokiУчастникL",
+  "className": "УчастникL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-sroki-участник",
+      "modelProjection": "УчастникL"
+    }
+  ]
+}

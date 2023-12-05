@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "Sroki",
+  "applicationTitle": "Sroki",
+  "items": [
+    {
+      "link": null,
+      "menuName": "sroki",
+      "caption": "Sroki",
+      "title": "Sroki",
+      "children": [
+        {
+          "link": "i-i-s-sroki-проект-l",
+          "menuName": null,
+          "caption": "Проект",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-sroki-участник-l",
+          "menuName": null,
+          "caption": "Участник",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-sroki-календарь-l",
+          "menuName": null,
+          "caption": "Календарь",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

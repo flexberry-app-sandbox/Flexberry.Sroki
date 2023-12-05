@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-sroki-проект-e",
+  "editForm": "i-i-s-sroki-проект-e",
+  "external": false,
+  "caption": "Проект",
+  "name": "IISSrokiПроектL",
+  "className": "ПроектL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-sroki-проект",
+      "modelProjection": "ПроектL"
+    }
+  ]
+}

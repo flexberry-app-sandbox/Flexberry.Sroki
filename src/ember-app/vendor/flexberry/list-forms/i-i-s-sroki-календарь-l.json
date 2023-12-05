@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-sroki-календарь-e",
+  "editForm": "i-i-s-sroki-календарь-e",
+  "external": false,
+  "caption": "Календарь",
+  "name": "IISSrokiКалендарьL",
+  "className": "КалендарьL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-sroki-календарь",
+      "modelProjection": "КалендарьL"
+    }
+  ]
+}

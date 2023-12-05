@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Проект",
+  "name": "IISSrokiПроектE",
+  "className": "ПроектE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-sroki-проект",
+      "modelProjection": "ПроектE"
+    }
+  ]
+}

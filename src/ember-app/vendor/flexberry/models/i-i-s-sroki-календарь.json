@@ -1,0 +1,155 @@
+﻿{
+  "name": "IISSrokiКалендарь",
+  "modelName": "i-i-s-sroki-календарь",
+  "className": "Календарь",
+  "nameSpace": "IIS.Sroki",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "трудозатраты",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "проект",
+      "relatedTo": "i-i-s-sroki-проект",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "участник",
+      "relatedTo": "i-i-s-sroki-участник",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КалендарьE",
+      "modelName": "i-i-s-sroki-календарь",
+      "attrs": [
+        {
+          "name": "трудозатраты",
+          "caption": "Трудозатраты",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Участник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Участник",
+          "name": "участник",
+          "relatedTo": "i-i-s-sroki-участник",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Проект",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Проект",
+          "name": "проект",
+          "relatedTo": "i-i-s-sroki-проект",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "КалендарьL",
+      "modelName": "i-i-s-sroki-календарь",
+      "attrs": [
+        {
+          "name": "трудозатраты",
+          "caption": "Трудозатраты",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Участник",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "участник",
+          "relatedTo": "i-i-s-sroki-участник",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Проект",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "проект",
+          "relatedTo": "i-i-s-sroki-проект",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
